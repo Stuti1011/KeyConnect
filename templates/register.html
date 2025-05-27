@@ -96,7 +96,6 @@
     <h3>Create your KeyConnect account</h3>
     <form method="POST" action="./register.html">
     <!-- <form method="POST" action="{% url 'register' %}"> -->
-      {% csrf_token %}
       <div class="mb-3 text-start">
         <label for="fullname">Full Name</label>
         <input id="fullname" name="fullname" type="text" class="form-control" placeholder="John Doe" autocomplete="name" aria-label="Full Name" required />

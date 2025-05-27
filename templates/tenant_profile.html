@@ -38,7 +38,6 @@
       box-shadow: 0 8px 20px rgba(196,166,173,0.2);
       max-width: 600px;
     }
-    /* New Bookings Button */
     .btn-bookings {
       background-color: #e4a6af;
       color: #5a3e57;
@@ -58,11 +57,6 @@
       background-color: #d995a2;
       color: #3e2e3a;
     }
-
-    /* Profile Icon */
-    .profile-dropdown {
-      position: relative;
-    }
     .profile-icon {
       width: 36px;
       height: 36px;
@@ -71,7 +65,6 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      cursor: pointer;
       box-shadow: 0 2px 8px rgba(0,0,0,0.15);
       transition: box-shadow 0.3s ease;
     }
@@ -83,29 +76,8 @@
       width: 20px;
       height: 20px;
     }
-    .dropdown-menu-custom {
-      position: absolute;
-      top: 45px;
-      right: 0;
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-      display: none;
-      min-width: 150px;
-      z-index: 1000;
-    }
-    .dropdown-menu-custom a {
-      display: block;
-      padding: 10px 15px;
-      color: #5a3e57;
+    .icon-link {
       text-decoration: none;
-      font-weight: 500;
-    }
-    .dropdown-menu-custom a:hover {
-      background-color: #fce9ec;
-    }
-    .profile-dropdown:hover .dropdown-menu-custom {
-      display: block;
     }
   </style>
 </head>
@@ -114,16 +86,15 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg px-4">
     <a class="navbar-brand" href="#">KeyConnect</a>
-    <div class="ms-auto profile-dropdown">
-      <div class="profile-icon" title="Profile">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-        </svg>
-      </div>
-      <div class="dropdown-menu-custom">
-        <a href="#">Dashboard</a>
-        <a href="#">Logout</a>
-      </div>
+    <div class="ms-auto">
+      <a href="tenant_profile.html" class="icon-link" title="Profile">
+        <div class="profile-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 
+              0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+          </svg>
+        </div>
+      </a>
     </div>
   </nav>
 
@@ -140,8 +111,7 @@
   </div>
 
   <!-- Your Bookings Button -->
-<button class="btn btn-bookings" onclick="window.location.href='booking_page.html'">Your Bookings</button>
-
+  <button class="btn btn-bookings" onclick="window.location.href='booking_page.html'">Your Bookings</button>
 
 </body>
 </html>

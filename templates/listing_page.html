@@ -69,14 +69,18 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg px-4">
-    <a class="navbar-brand" href="#">KeyConnect</a>
-    <div class="ms-auto">
-      <div class="profile-icon" title="Profile">
-        <!-- Simple user icon SVG -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" >
-          <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-        </svg>
+<!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid px-5">
+      <a class="navbar-brand" href="#">KeyConnect</a>
+      <div class="d-flex ms-auto align-items-center">
+        <div class="profile-icon" title="Profile">
+          <!-- Simple user icon SVG -->
+           <a href="./owner_profile.html">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" >
+            <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+          </svg></a>
+        </div>
       </div>
     </div>
   </nav>
@@ -85,23 +89,25 @@
     <h2>Your PG Listings</h2>
 
     <div class="listing-card">
+      <a href="property_details.html" style="text-decoration: none; color: inherit;">
       <img src="https://source.unsplash.com/160x100/?pg,room" class="listing-img" />
       <div>
         <h5>PG in Navi Mumbai</h5>
         <p>₹7,500/month • Shared Room • AC • Wifi</p>
         <a href="#" class="btn btn-primary btn-sm">Edit</a>
         <a href="#" class="btn btn-danger btn-sm">Delete</a>
-      </div>
+      </div></a>
     </div>
 
     <div class="listing-card">
+      <a href="property_details.html" style="text-decoration: none; color: inherit;"></a>
       <img src="https://source.unsplash.com/160x100/?hostel,beds" class="listing-img" />
       <div>
         <h5>Girls PG - Dadar</h5>
         <p>₹9,000/month • Single Room • Food Included</p>
         <a href="#" class="btn btn-primary btn-sm">Edit</a>
         <a href="#" class="btn btn-danger btn-sm">Delete</a>
-      </div>
+      </div></a>
     </div>
 
   </div>

@@ -119,11 +119,18 @@
 </head>
 <body>
 
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid px-4">
+    <div class="container-fluid px-5">
       <a class="navbar-brand" href="#">KeyConnect</a>
-      <div class="ms-auto">
-        <i class="fas fa-user-circle profile-icon"></i>
+      <div class="d-flex ms-auto align-items-center">
+        <div class="profile-icon" title="Profile">
+          <!-- Simple user icon SVG -->
+           <a href="./owner_profile.html">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" >
+            <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+          </svg></a>
+        </div>
       </div>
     </div>
   </nav>
@@ -140,7 +147,7 @@
   </div>
 
   <div class="container listings">
-    <button class="btn-your-property">Your Property</button>
+    <button class="btn-your-property" onclick="window.location.href='listing_page.html'">Your Property</button>
   </div>
 
 </body>

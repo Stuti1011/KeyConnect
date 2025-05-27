@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Your Listings - KeyConnect</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #fce9ec, #f7f0f4);
+      color: #5a3e57;
+    }
+    .navbar {
+      background: linear-gradient(to right, #8a7ca9, #e4a6af);
+    }
+    .navbar-brand {
+      color: #fff !important;
+      font-weight: 600;
+    }
+    .container {
+      margin-top: 40px;
+    }
+    .listing-card {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 25px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .listing-img {
+      width: 160px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+    .btn {
+      margin-right: 10px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    /* Profile Icon */
+    .profile-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      transition: box-shadow 0.3s ease;
+    }
+    .profile-icon:hover {
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+    .profile-icon svg {
+      fill: #8a7ca9;
+      width: 20px;
+      height: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg px-4">
+    <a class="navbar-brand" href="#">KeyConnect</a>
+    <div class="ms-auto">
+      <div class="profile-icon" title="Profile">
+        <!-- Simple user icon SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" >
+          <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+        </svg>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h2>Your PG Listings</h2>
+
+    <div class="listing-card">
+      <img src="https://source.unsplash.com/160x100/?pg,room" class="listing-img" />
+      <div>
+        <h5>PG in Navi Mumbai</h5>
+        <p>₹7,500/month • Shared Room • AC • Wifi</p>
+        <a href="#" class="btn btn-primary btn-sm">Edit</a>
+        <a href="#" class="btn btn-danger btn-sm">Delete</a>
+      </div>
+    </div>
+
+    <div class="listing-card">
+      <img src="https://source.unsplash.com/160x100/?hostel,beds" class="listing-img" />
+      <div>
+        <h5>Girls PG - Dadar</h5>
+        <p>₹9,000/month • Single Room • Food Included</p>
+        <a href="#" class="btn btn-primary btn-sm">Edit</a>
+        <a href="#" class="btn btn-danger btn-sm">Delete</a>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

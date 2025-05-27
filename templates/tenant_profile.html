@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tenant Profile - KeyConnect</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f7f0f4 0%, #fce9ec 100%);
+      color: #5a3e57;
+    }
+    .navbar {
+      background: linear-gradient(90deg, #8a7ca9, #e4a6af);
+      box-shadow: 0 6px 20px rgba(142,124,169,0.6);
+    }
+    .navbar-brand {
+      color: #fff !important;
+      font-weight: 700;
+    }
+    .profile-header {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 5px 15px rgba(142,124,169,0.4);
+    }
+    .info-box {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 30px;
+      margin: 30px auto;
+      box-shadow: 0 8px 20px rgba(196,166,173,0.2);
+      max-width: 600px;
+    }
+    /* New Bookings Button */
+    .btn-bookings {
+      background-color: #e4a6af;
+      color: #5a3e57;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-weight: 600;
+      border: none;
+      margin: 30px auto;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(196,166,173,0.4);
+      transition: background-color 0.3s ease;
+      display: block;
+      max-width: 200px;
+      text-align: center;
+    }
+    .btn-bookings:hover {
+      background-color: #d995a2;
+      color: #3e2e3a;
+    }
+
+    /* Profile Icon */
+    .profile-dropdown {
+      position: relative;
+    }
+    .profile-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      transition: box-shadow 0.3s ease;
+    }
+    .profile-icon:hover {
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+    .profile-icon svg {
+      fill: #8a7ca9;
+      width: 20px;
+      height: 20px;
+    }
+    .dropdown-menu-custom {
+      position: absolute;
+      top: 45px;
+      right: 0;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+      display: none;
+      min-width: 150px;
+      z-index: 1000;
+    }
+    .dropdown-menu-custom a {
+      display: block;
+      padding: 10px 15px;
+      color: #5a3e57;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .dropdown-menu-custom a:hover {
+      background-color: #fce9ec;
+    }
+    .profile-dropdown:hover .dropdown-menu-custom {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg px-4">
+    <a class="navbar-brand" href="#">KeyConnect</a>
+    <div class="ms-auto profile-dropdown">
+      <div class="profile-icon" title="Profile">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+        </svg>
+      </div>
+      <div class="dropdown-menu-custom">
+        <a href="#">Dashboard</a>
+        <a href="#">Logout</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Tenant Info -->
+  <div class="profile-header">
+    <img src="https://source.unsplash.com/120x120/?girl,student" class="profile-img" alt="Tenant" />
+    <h2 class="mt-3">Welcome, Tenant Name</h2>
+  </div>
+
+  <div class="info-box">
+    <p><strong>Email:</strong> tenant@email.com</p>
+    <p><strong>Phone:</strong> +91-9876543211</p>
+    <p><strong>Current Bookings:</strong> 1</p>
+  </div>
+
+  <!-- Your Bookings Button -->
+  <button class="btn-bookings" onclick="alert('Redirecting to your bookings page...')">Your Bookings</button>
+
+</body>
+</html>

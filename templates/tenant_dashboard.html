@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tenant Dashboard - KeyConnect</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f7f0f4 0%, #fce9ec 100%);
+      min-height: 100vh;
+      color: #5a3e57;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background: linear-gradient(90deg, #8a7ca9, #e4a6af);
+      box-shadow: 0 6px 20px rgba(142,124,169,0.6);
+      width: 100%;
+      padding: 0.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar-brand {
+      color: #fff !important;
+      font-weight: 700;
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
+
+    /* Profile Icon styling */
+    .profile-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      transition: box-shadow 0.3s ease;
+    }
+
+    .profile-icon:hover {
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+
+    .profile-icon svg {
+      fill: #8a7ca9;
+      width: 20px;
+      height: 20px;
+    }
+
+    .welcome-container {
+      margin-top: 100px;
+      text-align: center;
+      color: #5a3e57;
+    }
+
+    .welcome-container h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+
+    .btn-primary {
+      border-radius: 50px;
+      background: linear-gradient(90deg, #8a7ca9, #e4a6af);
+      border: none;
+      font-weight: 700;
+      padding: 14px 40px;
+      box-shadow: 0 6px 15px rgba(142,124,169,0.5);
+      transition: background 0.3s ease;
+      color: white;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+
+    .btn-primary:hover {
+      background: linear-gradient(90deg, #e4a6af, #8a7ca9);
+      box-shadow: 0 8px 20px rgba(196,166,173,0.9);
+    }
+
+    .properties-container {
+      margin-top: 60px;
+      max-width: 600px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding: 0 20px 50px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .property-card {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(196,166,173,0.15);
+      overflow: hidden;
+      transition: box-shadow 0.3s ease;
+      cursor: pointer;
+      color: #5a3e57;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 15px;
+    }
+
+    .property-card:hover {
+      box-shadow: 0 12px 30px rgba(196,166,173,0.3);
+    }
+
+    .property-img {
+      width: 100%;
+      max-height: 350px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(196,166,173,0.3);
+      margin-bottom: 15px;
+    }
+
+    .property-info {
+      width: 100%;
+      text-align: center;
+    }
+
+    .property-title {
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: #8a7ca9;
+      margin-bottom: 8px;
+    }
+
+    .property-details {
+      font-weight: 600;
+      color: #7b5e6c;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="#" class="navbar-brand">KeyConnect</a>
+    <div class="profile-icon" title="Profile" onclick="alert('Profile clicked!')">
+      <!-- Simple user icon SVG -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 
+          0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+      </svg>
+    </div>
+  </nav>
+
+  <!-- Welcome and Find PG button -->
+  <div class="welcome-container">
+    <h1>Welcome, Tenant!</h1>
+    <button class="btn btn-primary" onclick="alert('Search PG listings functionality here')">Find PG</button>
+  </div>
+
+  <!-- Properties -->
+  <div class="properties-container">
+    <div class="property-card" onclick="alert('Clicked Cozy PG Near Dadar')">
+      <img src="https://images.unsplash.com/photo-1618220179428-22790b461013" alt="Cozy PG Near Dadar" class="property-img" />
+      <div class="property-info">
+        <div class="property-title">Cozy PG Near Dadar</div>
+        <div class="property-details">₹9,000/month - Non-AC, Food Available</div>
+      </div>
+    </div>
+
+    <div class="property-card" onclick="alert('Clicked Shared PG in Bandra West')">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Shared PG in Bandra West" class="property-img" />
+      <div class="property-info">
+        <div class="property-title">Shared PG in Bandra West</div>
+        <div class="property-details">₹7,500/month - 3 Sharing, Security</div>
+      </div>
+    </div>
+
+    <div class="property-card" onclick="alert('Clicked PG in Andheri East')">
+      <img src="https://images.unsplash.com/photo-1620752592580-f11a4d8b37b7" alt="PG in Andheri East" class="property-img" />
+      <div class="property-info">
+        <div class="property-title">PG in Andheri East</div>
+        <div class="property-details">₹8,500/month - AC, Food Included</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
